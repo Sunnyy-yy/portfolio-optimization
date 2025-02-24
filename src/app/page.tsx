@@ -1,4 +1,6 @@
+"use client"
 import React from "react";
+import { redirect } from "next/navigation";
 import Scene from "../app/components/scene"; // Assuming Scene is your animation component
 
 export default function HeroSection() {
@@ -14,7 +16,9 @@ export default function HeroSection() {
         <Scene />
       </div>
 
-      <button className="px-6 py-3 text-lg font-semibold bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-md transition-all">
+      <button className="px-6 py-3 text-lg font-semibold bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-md transition-all"
+      onClick= {() => redirect('/login')}
+      >
         Get Started
       </button>
     </section>
