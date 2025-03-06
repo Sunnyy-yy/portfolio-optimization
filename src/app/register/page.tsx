@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { redirect } from "next/navigation";
 
 export default function RegisterPage() {
   const [name, setName] = useState("");
@@ -79,6 +80,12 @@ export default function RegisterPage() {
             className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
           >
             Register
+          </button>
+          <button
+             onClick={() => redirect('/login')}
+            className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Go Back to Login
           </button>
         </form>
       </div>
