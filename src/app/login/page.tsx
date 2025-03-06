@@ -27,6 +27,7 @@ export default function LoginPage() {
     } else {
     //   router.push("/dashboard");
     console.log("Login successful!");
+    redirect('/home')
     }
   };
 
