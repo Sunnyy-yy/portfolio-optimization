@@ -35,6 +35,11 @@ export default function RegisterPage() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-100 bg-gradient-to-b from-black to-gray-900">
+      <button
+      className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-700 transition"
+      onClick={() => redirect('/')}
+>  ⬅ Home
+</button>
       <div className="w-full max-w-md p-8 space-y-6 bg-white shadow-lg rounded-2xl">
         <h2 className="text-2xl font-bold text-center text-gray-800">Register</h2>
 
