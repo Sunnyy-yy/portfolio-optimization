@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { redirect } from "next/navigation";
+import { delay } from "framer-motion/dom";
 
 export default function HomePage() {
   return (
@@ -37,6 +38,12 @@ export default function HomePage() {
       </section>
 
       {/* What We Do */}
+      <motion.section
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+  >
       <section className="py-20 px-6 max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-center">What We Do</h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -60,9 +67,16 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </motion.section>
 
       {/* Careers */}
       <section className="py-20 px-6 bg-gray-50">
+      <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.2 }}
+    viewport={{ once: true }}
+  >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Become a Member</h2>
           <p className="text-lg text-gray-700 mb-8">
@@ -75,6 +89,7 @@ export default function HomePage() {
             Login
           </button>
           </div>
+      </motion.div>
       </section>
 
       {/* Footer */}
