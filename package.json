@@ -14,12 +14,14 @@
     "bcryptjs": "^3.0.2",
     "framer-motion": "^12.4.7",
     "lottie-react": "^2.4.1",
+    "lucide-react": "^0.513.0",
     "mongodb": "^6.13.1",
     "next": "15.1.7",
     "next-auth": "^4.24.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
+    "recharts": "^2.15.3",
     "three": "^0.173.0"
   },
   "devDependencies": {
